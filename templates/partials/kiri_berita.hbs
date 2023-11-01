@@ -1,0 +1,18 @@
+<div class="masthead">
+  <div class="masthead-content text-white">
+    <div class="container-fluid px-4 px-lg-0">
+      {{! <h1 class="fst-italic lh-1 mb-4">Website Berita</h1> }}
+      <div class="container">
+        <h1>Data Berita</h1>
+        {{#each berita}}
+          <div class="berita-item">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <img src="{{image}}" height="50px" width="70px" alt="" srcset="" />
+            <a href="{{url}}" target="_blank">Baca selengkapnya</a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
